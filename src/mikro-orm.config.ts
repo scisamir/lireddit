@@ -6,7 +6,7 @@ import path from "path";
 export default {
     migrations: {
         path: path.join(__dirname, './migrations'),
-        glob: '^[\w-]+\d+\.[tj]s$',
+        pattern: /^[\w-]+\d+\.[tj]s$/,
     },
     entities: [Post],
     dbName: 'lireddit',
